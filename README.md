@@ -34,7 +34,7 @@ Work Day Planner is a simple and intuitive web application designed to help empl
 
 ## Usage
 
-1. **Opening the Planner:** Open the web app to view the current day's planner. Use the following link to navegate to the Web App: ![Work Day Planner]() 
+1. **Opening the Planner:** Open the web app to view the current day's planner. Use the following link to navegate to the Web App: [Work Day Planner](https://davidj92.github.io/WorkDay-Planner/) 
 2. **Adding Events:** Click on the time block corresponding to the desired time. Enter the event details and click the save button.
 3. **Editing Events:** To edit, simply click on the time block again, update the event, and click save.
 4. **Persistence:** Your events will be saved in the local storage and persist even if you refresh the page.
