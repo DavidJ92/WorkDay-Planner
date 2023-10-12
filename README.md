@@ -29,7 +29,7 @@ Work Day Planner is a simple and intuitive web application designed to help empl
 
 ## Screenshot
 
-![Work Day Planner](/Assets/img/webApp:img.png)
+![Work Day Planner](/img/webApp:img.png)
 
 
 ## Usage
