@@ -41,7 +41,7 @@ textarea {
 }
 
 #currentDay {
-  background-image: url(/Assets/img/day-night.jpeg);
+  background-image: url(/assets/img/day-night.jpeg);
   background-size: cover; /* or 'contain', depending on how you want the image to fit */
   background-repeat: no-repeat;
   color: white; 
