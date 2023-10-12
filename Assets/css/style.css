@@ -1,0 +1,89 @@
+:root {
+  --main-bg-color: #ffffff; /* Main background color */
+  --text-color: #000000; /* Main text color */
+  --border-color: #000000; /* Border color */
+  --past-color: #d2d2d2; /* Past time block color */
+  --present-color: #ff6961; /* Present time block color */
+  --future-color: #77dd77; /* Future time block color */
+  --save-btn-bg-color: #06aed5; /* Save button background color */
+  --save-btn-hover-color: #0788a6; /* Save button background color on hover */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--text-color);
+  border-left: 1px solid var(--border-color);
+  padding: 10px;
+  width: 100%;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.row {
+  border-top: 1px solid var(--border-color);
+}
+
+#currentDay {
+  background-image: url(/Assets/img/day-night.jpeg);
+  background-size: cover; /* or 'contain', depending on how you want the image to fit */
+  background-repeat: no-repeat;
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+}
+
+
+.hour {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  border-top: 1px dashed var(--border-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.past {
+  background-color: var(--past-color);
+  color: white;
+}
+
+.present {
+  background-color: var(--present-color);
+  color: white;
+}
+
+.future {
+  background-color: var(--future-color);
+  color: white;
+}
+
+.saveBtn {
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--save-btn-bg-color);
+  color: white;
+  width: 100;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn:hover {
+  background-color: var(--save-btn-hover-color);
+}
