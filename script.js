@@ -15,7 +15,11 @@ $(document).ready(function () {
             }
 
             var hourText = $("<div>").addClass("col-2 col-md-1 hour text-center py-3").text(dayjs().hour(hour).format("h A"));
-            var description = $("<textarea>").addClass("col-8 col-md-10 description").attr("rows", "3");
+            var description = $("<textarea>")
+                .addClass("col-8 col-md-10 description")
+                .attr("rows", "3")
+                .attr("id", "description-" + hour);  // Add this line to set the id attribute
+
             var saveBtn = $("<button>").addClass("btn saveBtn col-2 col-md-1").attr("aria-label", "save").html('<i class="fas fa-save" aria-hidden="true"></i>');
 
             timeBlock.attr("id", "hour-" + hour);
@@ -39,7 +43,7 @@ $(document).ready(function () {
     // Save button click event
     $(".saveBtn").on("click", function () {
         var hour = parseInt($(this).closest(".time-block").attr("id").split("-")[1]);
-        var eventText = $(this).siblings(".description").val();
+        var eventText = $(this).closest(".time-block").find(".description").val();
         localStorage.setItem("event-" + hour, eventText);
         showSaveMessage(); // Call function to show save message
     });
@@ -60,4 +64,3 @@ $(document).ready(function () {
         }, 5000);
     }
 });
-
